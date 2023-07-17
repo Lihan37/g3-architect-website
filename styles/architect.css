@@ -58,6 +58,13 @@ nav li a {
     padding: 20px 25px;
 }
 
+.text-grey {
+    color: #727272;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
 /* banner styles */
 .banner-content {
     max-width: 800px;
@@ -72,12 +79,7 @@ nav li a {
     ;
 }
 
-.banner-des {
-    color: var(--dark-03, #727272);
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-}
+
 
 .banner img {
     margin-top: 20px;
@@ -86,7 +88,7 @@ nav li a {
 
 /* main section */
 main {
-    margin: 0px auto;
+    margin: 70px auto;
     max-width: 1440px;
 }
 
@@ -135,8 +137,18 @@ main {
         padding: 20px;
     }
 
-    nav {
+    nav,
+    .teams-container {
         flex-direction: column;
+    }
+
+    .teams-img-container {
+        grid-template-columns: 1fr;
+    }
+
+    .teams-content {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -148,5 +160,9 @@ main {
 
     header {
         padding: 50px;
+    }
+
+    .teams-container {
+        flex-direction: column;
     }
 }
